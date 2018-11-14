@@ -22,6 +22,8 @@ urlImagem = 'https://picsum.photos/200';
 valorAtual: string = '';
 valorSalvo: string ='';
 isMouseOver: boolean = false;
+nomeDoCurso: string = 'Curso de Angular Antulio';
+valorInicial = 15;
 nome: string ='abc';
 pessoa: any = {
   nome:  'Antulio de Oliveira',
@@ -42,6 +44,9 @@ salvarValor(valor) {
 }
 onMouseOverOut() {
 this.isMouseOver = !this.isMouseOver;
+}
+onMudouValor(evento){
+  console.log(evento.novoValor);
 }
   constructor() { }
 
